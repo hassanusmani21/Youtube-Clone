@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+  }
+  
+      .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+  
+    .Logo-img {
+      width: 100px;
+      /* height: 100px; */
+      margin-right: auto;
+    }
+  
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .search-container input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+    }
+  
+    .search-container button {
+      background-color: #555;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  
+    #voice-search-btn, #notification-btn {
+      margin-left: 10px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    #voice-search-btn i, #notification-btn i {
+      font-size: 24px;
+      color: #555;
+    }
+  
+    .Account-img{
+      border-radius: 100%;
+    }
+  

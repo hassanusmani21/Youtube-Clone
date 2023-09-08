@@ -1,0 +1,219 @@
+*{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+#append{
+    display: grid;
+   overflow: scroll;
+   overflow-x: hidden;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+#nevbar{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+#leftNavBar{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid blueviolet; */
+    justify-content: space-evenly;
+}
+#leftNavBar-logo{
+    display: flex;
+    margin-left: 20px;
+    /* border: 1px solid blue; */
+
+    
+}
+#leftNavBar-hambarger{
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  
+}
+
+#rightNavBar{
+    display: flex;
+    width: 20%;
+    /* border: 1px solid green;    */
+    justify-content: space-around;
+}
+#midNavBar{
+    display: flex;
+    width: 45%;
+    /* border: 1px solid black; */
+    /* padding: 20px; */
+    
+}
+
+#midNavBar>input{
+    width: 80%;
+    border: 0.5px solid black;
+    outline: none;
+}
+#midNavBar>button{
+    width: 10%;
+    
+    font-size: 22px;
+  
+}
+#midNavBar>div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-left: 30px;
+    
+}
+
+.rightNavbar-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  
+ 
+}
+
+#bottam-div{
+    display:flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 543px;
+}
+
+#bottam-div-hambarger{
+    display: flex;
+ 
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 60%;
+}
+
+#bottam-div-hambarger>div{
+display: flex;
+
+flex-direction: column;
+justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    padding: 5px;
+}
+
+p{
+    font-size: 12px;
+}
+
+body{
+    margin: 0px;
+  }
+  
+  /* Style for the header container */
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+  
+    .Logo-img {
+      width: 100px;
+      /* height: 100px; */
+      margin-right: auto;
+    }
+  
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .search-container input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+    }
+  
+    .search-container button {
+      background-color: #555;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  
+    #voice-search-btn, #notification-btn {
+      margin-left: 10px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  
+    #voice-search-btn i, #notification-btn i {
+      font-size: 24px;
+      color: #555;
+    }
+  
+  
+  .grid-item iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+  }
+  
+  .Thumnail{
+    border-radius:15px 15px 15px 15px;
+    
+  }
+  
+  /* .logo-img,img{
+    display: flex;
+    width:10%;
+    border: 2px solid black;
+  } */
+  
+   p{
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical; 
+   } 
+   .Account-img{
+    margin-left:auto ;
+    border-radius: 100%;
+    /* width: 50%; */
+    /* height: 50%; */
+    /* border: 2px solid ; */
+   }

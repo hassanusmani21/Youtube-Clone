@@ -1,0 +1,64 @@
+<!-- <!-- // let Iframe=document.createElement("iframe") -->
+<!-- // Iframe.src=`https://www.youtube.com/embed/${videoId}` -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9d1bb2373.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./videoStyling.css">
+    <title>Video</title>
+</head>
+<body>
+</div>
+<header class="header">
+  <a href="./style.html">
+    <img class="Logo-img" src="./image-removebg-preview.png" alt="">
+  </a>
+  <div class="search-container">
+    <input type="text" placeholder="Search..." name="search" id="query">
+    <button type="submit" onclick="SearchMovies()">
+      <i class="fa fa-search"></i>
+    </button>
+    <button id="voice-search-btn" onclick="VoiceSearch()">
+      <i class="fa fa-microphone"></i>
+    </button>
+    <button id="notification-btn" onclick="ShowNotifications()">
+      <i class="fa fa-bell"></i>
+    </button>
+  </div>
+  <a href="https://www.youtube.com/channel/UCj1Yxn_3Gt6FDti8TmxbwWg">
+    <img class="Account-img" src="./img.jpg" alt="" width="30px" height="30px">
+  </a>
+</header>
+    <dir id="videoShows"></dir>
+    <div id="query"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</html>
+
+<script>
+function GettingVideo() {
+    let videos = JSON.parse(localStorage.getItem("Video"));
+    let div = $("<div>");
+    let appenVideo = $("#videoShows");
+    console.log(videos);
+
+    let iframe = $("<iframe>");
+    iframe.attr("src", `https://www.youtube.com/embed/${videos.videoId}`);
+    iframe.css("width", "800px");
+    iframe.css("height", "450px");
+
+    let p = $("<p>");
+    p.text(videos.title);
+    p.css("width", "560px");
+
+    div.append(iframe, p);
+    appenVideo.append(div);
+}
+
+GettingVideo();
+
+</script>
